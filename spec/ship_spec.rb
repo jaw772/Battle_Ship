@@ -27,9 +27,8 @@ RSpec.describe Ship do
 
   it "can be sunk" do
     cruiser = Ship.new("Cruiser", 3)
-    3.times do (cruiser.hit)
+    3.times {cruiser.hit }
     expect(cruiser.health).to eq 0
     expect(cruiser.sunk?).to be true
   end
-end
 end
